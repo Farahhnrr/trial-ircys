@@ -1,0 +1,54 @@
+export type NavItem = {
+  label: string;
+  to: string;
+  children?: { label: string; to: string }[];
+};
+
+export const siteNav: NavItem[] = [
+  { label: "Home", to: "/" },
+  {
+    label: "About us",
+    to: "/about",
+    children: [
+      { label: "What is IRCYS?", to: "/about/what-is-ircys" },
+      { label: "Organizer", to: "/about/organizer" },
+      { label: "Aim", to: "/about/aim" },
+      { label: "Concept", to: "/about/concept" },
+    ],
+  },
+  {
+    label: "Competition",
+    to: "/competition",
+    children: [
+      { label: "Eligibility", to: "/competition/eligibility" },
+      { label: "Categories", to: "/competition/categories" },
+      { label: "Competition Stages", to: "/competition/competition-stages" },
+      { label: "Grand Final Mechanism", to: "/competition/grand-final-mechanism" },
+      { label: "Timeline", to: "/competition/timeline" },
+      { label: "Fee and Payment Policy", to: "/competition/fee-and-payment-policy" },
+      { label: "Hospitality", to: "/competition/hospitality" },
+      { label: "Rules and Regulation", to: "/competition/rules-and-regulation" },
+    ],
+  },
+  { label: "Medal and Award", to: "/medal-and-award" },
+  {
+    label: "Legacy",
+    to: "/legacy",
+    children: [
+      { label: "Paper Collective", to: "/legacy/paper-collective" },
+      { label: "Decree", to: "/legacy/decree" },
+      { label: "Documentation", to: "/legacy/documentation" },
+    ],
+  },
+  {
+    label: "Get Involved",
+    to: "/get-involved",
+    children: [
+      { label: "Become a Volunteer", to: "/get-involved/become-a-volunteer" },
+      { label: "Become a Partner", to: "/get-involved/become-a-partner" },
+      { label: "Become a Judge", to: "/get-involved/become-a-judge" },
+    ],
+  },
+  { label: "FAQ", to: "/faq" },
+  { label: "Contact", to: "/contact" },
+];

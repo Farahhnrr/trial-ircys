@@ -1,23 +1,6 @@
 <template>
   <div class="page">
-    <header class="top">
-      <div class="brand">
-        <img class="brand-logo" src="/img/logo.png" alt="International Research Competition logo" />
-      </div>
-
-      <nav class="top-nav">
-        <NuxtLink to="/" class="nav-link is-active">Home</NuxtLink>
-        <NuxtLink to="/about" class="nav-link">About us</NuxtLink>
-        <NuxtLink to="/competition" class="nav-link">Competition</NuxtLink>
-        <a href="#" class="nav-link">Categories</a>
-        <NuxtLink to="/medal-and-award" class="nav-link">Medal and Award</NuxtLink>
-        <a href="#" class="nav-link">Get Involved</a>
-        <a href="#" class="nav-link">FAQ</a>
-        <a href="#" class="nav-link">Contact</a>
-      </nav>
-
-      <button class="nav-cta">Register</button>
-    </header>
+    <SiteNav />
 
     <main class="canvas">
       <section class="hero fade-in" aria-label="Homepage highlights">
@@ -159,7 +142,8 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .page::before {
@@ -204,7 +188,7 @@
 .canvas {
   flex: 1;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   gap: 4rem;

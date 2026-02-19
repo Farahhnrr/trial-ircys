@@ -1,23 +1,6 @@
 <template>
   <div class="page">
-    <header class="top">
-      <div class="brand">
-        <img class="brand-logo" src="/img/logo.png" alt="International Research Competition logo" />
-      </div>
-
-      <nav class="top-nav">
-        <NuxtLink to="/" class="nav-link">Home</NuxtLink>
-        <NuxtLink to="/about" class="nav-link is-active">About us</NuxtLink>
-        <NuxtLink to="/competition" class="nav-link">Competition</NuxtLink>
-        <a href="#" class="nav-link">Categories</a>
-        <NuxtLink to="/medal-and-award" class="nav-link">Medal and Award</NuxtLink>
-        <a href="#" class="nav-link">Get Involved</a>
-        <a href="#" class="nav-link">FAQ</a>
-        <a href="#" class="nav-link">Contact</a>
-      </nav>
-
-      <button class="nav-cta">Register</button>
-    </header>
+    <SiteNav />
 
     <main class="canvas">
       <section class="about-hero" aria-label="About overview">
@@ -123,16 +106,17 @@
 
       <section class="about-story soften-in delay-2" aria-label="Story and mission">
         <div class="story-card">
-          <h2>Our story</h2>
+          <h2>About us - What is IRCYS</h2>
           <p>
-            The Olympiad started as a campus research fair and quickly evolved into a multi-country
-            competition. Today, we curate hybrid programs that blend mentorship, rigorous judging,
-            and international collaboration.
+            The International Research Competition for Young Scientists (IRCYS) is a premier global
+            event dedicated to fostering scientific research among youth. Unlike typical invention
+            fairs, IRCYS places a strong emphasis on the research process, methodology, and
+            scientific analysis.
           </p>
           <p>
-            Our mission is to elevate young innovators by providing structure, feedback, and
-            visibility. We believe the best research grows when students are supported by a global
-            community.
+            Moving to its 7th Edition in 2026, IRCYS transforms into a mid-year grand summit,
+            inviting young brilliant minds to gather in the Island of Gods, Bali, to present their
+            discoveries.
           </p>
         </div>
         <div class="story-panel">
@@ -242,7 +226,8 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .page::before {
@@ -287,7 +272,7 @@
 .canvas {
   flex: 1;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   gap: 4rem;
