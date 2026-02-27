@@ -6,7 +6,10 @@
       <section class="hero fade-in" aria-label="Homepage highlights">
         <div class="hero-content">
           <p class="hero-kicker">International Olympiad 2026</p>
-          <h1 class="hero-title">Empowering young innovators to compete on a global stage.</h1>
+          <h1 class="hero-title">
+            Empowering young innovators to compete on a global stage.
+            <span class="theme-highlight">Innovate, Inspire, Impact.</span>
+          </h1>
           <p class="hero-copy">
             Join a network of mentors, judges, and finalists across 40+ countries. Build a project,
             present your research, and secure scholarships.
@@ -31,10 +34,17 @@
           </div>
         </div>
         <div class="hero-card" aria-label="Next deadline">
-          <p class="card-kicker">Next deadline</p>
-          <h2>April 28, 2026</h2>
-          <p>Submission closes in 18 days. Finalist announcement: May 18.</p>
-          <button class="secondary-btn">Submit Project</button>
+          <p class="card-kicker">Competition Timeline 2026</p>
+          <h2>Key Milestones</h2>
+          <ul class="hero-card-timeline">
+            <li><strong>Apr 1 - Jul 17:</strong> Open Registration</li>
+            <li><strong>Apr 2 - Jul 17:</strong> Initial Screening / Abstract Submission</li>
+            <li><strong>Apr 3 - Jul 17:</strong> Full Paper Review</li>
+            <li><strong>Jul 17:</strong> Registration Deadline</li>
+            <li><strong>Jul 30:</strong> Grand Final Preparation</li>
+            <li><strong>Aug 13 - 16:</strong> International Grand Final</li>
+          </ul>
+          <button class="secondary-btn">View Full Timeline</button>
         </div>
       </section>
 
@@ -256,6 +266,18 @@
   color: #241c14;
 }
 
+.theme-highlight {
+  display: inline-block;
+  margin-top: 0.55rem;
+  margin-left: 0.2rem;
+  padding: 0.18rem 0.62rem;
+  border-radius: 12px;
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: linear-gradient(135deg, #a37b4b, #7b5a36);
+}
+
 .hero-copy {
   margin: 0 0 1.6rem;
   max-width: 36rem;
@@ -305,6 +327,56 @@
 .hero-card p {
   margin: 0 0 1.6rem;
   color: rgba(247, 241, 231, 0.8);
+}
+
+.hero-card-timeline {
+  margin: 0 0 1.2rem;
+  padding-left: 0;
+  list-style: none;
+  position: relative;
+}
+
+.hero-card-timeline li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0.9rem 1.25rem;
+  color: rgba(247, 241, 231, 0.88);
+  line-height: 1.45;
+}
+
+.hero-card-timeline li::before {
+  content: "";
+  position: absolute;
+  left: 0.05rem;
+  top: 0.28rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: #f4dbc0;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+
+.hero-card-timeline li::after {
+  content: "";
+  position: absolute;
+  left: 0.28rem;
+  top: 0.85rem;
+  bottom: 0.1rem;
+  width: 1px;
+  background: rgba(247, 241, 231, 0.35);
+}
+
+.hero-card-timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.hero-card-timeline li:last-child::after {
+  display: none;
+}
+
+.hero-card-timeline strong {
+  color: #ffffff;
 }
 
 .card-kicker {

@@ -18,7 +18,7 @@ const route = useRoute();
 const links = [
   { label: "Eligibility", to: "/competition/eligibility" },
   { label: "Categories", to: "/competition/categories" },
-  { label: "Competition Stages", to: "/competition/competition-stages" },
+  { label: "Phases and Pathway", to: "/competition/phases-and-pathway" },
   { label: "Grand Final Mechanism", to: "/competition/grand-final-mechanism" },
   { label: "Timeline", to: "/competition/timeline" },
   { label: "Fee and Payment Policy", to: "/competition/fee-and-payment-policy" },
